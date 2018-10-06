@@ -64,7 +64,6 @@ set clipboard=unnamed
 set wildignore+=drops/**
 source ~/scripts/vim_tools.vim
 " source ~/scripts/setcolors.vim
-command -nargs=1 GrepRTKit call GrepRTKit("<args>")
 command -nargs=1 Gr call Gr("<args>")
 command -nargs=0 GenTags call GenTags()
 command! -nargs=+ FindReplaceInFiles :call FindReplaceInFiles(<f-args>)

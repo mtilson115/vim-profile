@@ -1,12 +1,6 @@
-
-function GrepRTKit(str)
-    let loc_str=a:str
-    execute "vimgrep /".loc_str."/jg ~/Code/RTKit/**/*.[c,h]"
-endfunction
-
 function Gr(str)
     let loc_str=a:str
-    execute "vimgrep /".loc_str."/jg ./fw/**/*.[c,h]"
+    execute "vimgrep /".loc_str."/jg **/*.[c,h]"
 endfunction
 
 function GenTags()

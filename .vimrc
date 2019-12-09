@@ -33,6 +33,10 @@ Plugin 'dkprice/vim-easygrep'
 
 Plugin 'flazz/vim-colorschemes'
 
+Plugin 'vim-airline/vim-airline'
+
+Plugin 'vim-airline/vim-airline-themes'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -76,13 +80,14 @@ endif
 highlight ExtraWhitespace ctermbg=blue
 
 " Status line tweeks
-set statusline=%<%f%<%{FileTime()}\         "file name and last modification
-set statusline+=%{fugitive#statusline()}\   "Git branch
-set statusline+=%=                          "right align
-set statusline+=%10((line=%l,col=%c)%)\     "line and column
-set statusline+=%P\                         "Percentage
-set statusline+=%{CurTime()}\               "Current time
-set laststatus=2
+" set statusline=%<%f%<%{FileTime()}\         "file name and last modification
+" set statusline+=%{fugitive#statusline()}\   "Git branch
+" set statusline+=%=                          "right align
+" set statusline+=%10((line=%l,col=%c)%)\     "line and column
+" set statusline+=%P\                         "Percentage
+" set statusline+=%{CurTime()}\               "Current time
+" set laststatus=2
+let g:airline_theme='minimalist'
 
 " nerdtree
 autocmd StdinReadPre * let s:std_in=1

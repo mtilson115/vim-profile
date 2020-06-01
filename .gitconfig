@@ -3,9 +3,24 @@
 [user]
 	name = Mitchell Tilson
 	email = mtilson115@gmail.com
-    username = mtilson115
+  username = mtilson115
 [alias]
-    d = difftool
-    lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-    lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
-    lg = !"git lg1"
+  d = difftool
+  lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+  lg3 = log --graph --decorate --pretty=format:'%C(bold blue)%h%C(reset) %C(yellow)%d%C(reset): %C(bold green)%an%C(reset) %C(white)%s%C(reset) - %C(bold red)%ad%C(reset)'
+  lg = !"git lg3"
+[color]
+	ui = true
+[color "diff-highlight"]
+	newNormal = auto
+	oldNormal = auto
+	oldHighlight = auto
+	newHighlight = auto
+[color "diff"]
+	meta = blue
+	frag = red
+	commit = bold blue
+	old = white
+	new = red
+	whitespace = blue

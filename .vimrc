@@ -21,7 +21,7 @@ Plugin 'tpope/vim-fugitive'
 
 Plugin 'will133/vim-dirdiff'
 
-Plugin 'valloric/YouCompleteMe'
+"Plugin 'valloric/YouCompleteMe'
 
 Plugin 'scrooloose/nerdtree'
 
